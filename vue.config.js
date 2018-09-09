@@ -1,5 +1,15 @@
 // vue.config.js
+const path = require('path');
+
 module.exports = {
+  configureWebpack: {
+    resolve: {
+      extensions: ['.js', '.vue'],
+      alias: {
+        '@': path.resolve(__dirname, './src/'),
+      },
+    },
+  },
   css: {
     loaderOptions: {
       sass: {
