@@ -1,0 +1,13 @@
+/* ==========================================================================
+   FONT MIXINS
+   ========================================================================== */
+
+@mixin roboto-light() {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+@mixin roboto-bold() {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
