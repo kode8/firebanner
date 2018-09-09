@@ -1,0 +1,16 @@
+// =============================================================================
+// Global Settings
+// =============================================================================
+
+
+// Border Settings
+// ==============================================
+
+$global-border-radius: 5px !default;
+
+// Animation Settings
+// ==============================================
+
+$global-animation-speed: 0.5s !default;
+$global-animation-speed-fast: 0.5 * $global-animation-speed;
+$global-animation-speed-slow: 2 * $global-animation-speed;
