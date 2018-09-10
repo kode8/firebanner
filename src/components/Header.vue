@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h1>Firebanner.io 🔥</h1>
+        <h1>{{ title }} 🔥</h1>
     </header>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
   data() {
     return {
-
+      title: 'firebanner.io',
     };
   },
 };
@@ -18,8 +18,9 @@ export default {
 <style lang="scss" scoped>
 header {
   background-color: $color-primary;
+  border-bottom: 1px solid darken($color-primary,3%);
   margin: 0;
-  padding: 10px;
+  padding: 10px 15px;
 
   h1 {
     @include roboto-light();

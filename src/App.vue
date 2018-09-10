@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <Header />
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <Header/>
+    <div class="content">
+      <!-- <div id="nav">
+            <router-link to="/">Home</router-link> |
+            <router-link to="/about">About</router-link>
+          </div> -->
+      <router-view/>
     </div>
-    <router-view/>
   </div>
 </template>
 
@@ -25,9 +27,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-
   @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
-
   html,
   body {
     margin: 0;
@@ -35,11 +35,16 @@ export default Vue.extend({
   }
 
   body {
-    font-family: "Roboto", -apple-system, system-ui, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: lighten($color-primary, 7%);
+    font-family: "Roboto", -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $white;
+  }
+
+  .content {
+    padding: 15px;
   }
 </style>
