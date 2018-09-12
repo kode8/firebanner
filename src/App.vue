@@ -42,6 +42,8 @@ export default Vue.extend({
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $white;
+    background-image: url('~/assets/light-bulbs-1875268_1280.jpg');
+    background-size: cover;
   }
 
   .content {
